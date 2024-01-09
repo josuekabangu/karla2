@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "python manage.py collectstatic --noinput && python manage.py migrate"
+
+[context.environment]
+  DJANGO_SETTINGS_MODULE = "karla2.settings"
+
+[site]
+  domain = "karla2.netlify.app"
